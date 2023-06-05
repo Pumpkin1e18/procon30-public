@@ -27,28 +27,3 @@
 ・着手数が多くて探索が困難  
 この３つに今回のゲームは当てはまっており、他には囲碁などでよく用いられている  
 本プログラムはプレイアウトと呼ばれるランダムにプレイする部分を特にこだわった  
-
-## フォルダ・ファイルの説明  
-- Environment: Visualizerの実行ファイルと実行するために必要なファイル  
-- Visualizer: Visualizerの開発環境  
-- c++: ソルバーのソースコード  
-  - get_file: 運営サーバーから取ってきたjsonファイルを保存する場所  
-  - post_file: 運営サーバーに送るためのファイルを保存する場所  
-  - Board.cpp: ボードの管理（ボードの初期化、表示など）をする  
-  - Board.h: Board.cppのヘッダーファイル  
-  - CreateBoard.cpp: ゲームの最初にボードを作る（「テンプレボード」、「ランダム生成」、「jsonファイルから生成」の3つを指定できる）  
-  - CreateBoard.h: CreateBoard.cppのヘッダーファイル  
-  - HttpRequest.cpp: 運営サーバーと通信する  
-  - HttpRequest.h: HttpRequest.cppのヘッダーファイル  
-  - Interface.cpp: ゲーム全体を管理する・main関数がある  
-  - JsonManagement.cpp: 「HttpRequest.cppで使うJsonファイル」と「本プログラムで使っている変数」の変換  
-  - JsonManagement.h: JsonManagement.cppのヘッダーファイル  
-  - Makefile: 複数のファイルを一気にコンパイル実行  
-  - Player.cpp: ゲームをプレイするプレイヤー  
-  - Player.h: Player.cppのヘッダーファイル  
-  - ReadJson.cpp: 最新バージョンでは使っていない  
-  - ReadJson.h: 最新バージョンでは使っていない  
-  - client.cpp: Visualizerサーバーのソルバー側のクライアント（Visualizer側のクライアントはUnityの方で記述している）  
-  - client.h: client.cppのヘッダーファイル  
-  - header.h: 複数のファイル共通のヘッダーファイル  
-  - server.cpp: Visualizerとソルバを通信するためのサーバー（ここでは運営サーバーとの区別のためにVisualizerサーバーと名づける）  
